@@ -47,3 +47,11 @@ Read the below pages and attend the tests
 - [Tables](https://www.w3schools.com/html/html_tables.asp)
 - [Classes](https://www.w3schools.com/html/html_classes.asp)
 - [Id](https://www.w3schools.com/html/html_id.asp)
+
+## Tasks
+
+
+| Requirement                                               | Output                                |
+| ----------------------------------------------------------|---------------------------------------|
+| ![task1](images/task-1.jpg)                               | ![output1](screenshots/output-1.png)  |
+| ![task2](images/task-2.jpg)                               | ![output2](screenshots/output-2.png)  |
