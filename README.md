@@ -55,5 +55,5 @@ Read the below pages and attend the tests
 | Requirement                                               | Output                                |
 | ----------------------------------------------------------|---------------------------------------|
 | ![task1](task-1/images/task-1.jpg )                               | ![output1](screenshots/output-1.png)  |
-| ![task2](images/task-2.jpg)                               | ![output2](screenshots/output-2.png)  |
-| ![task4](images/task-4.jpg)                               | ![output3](screenshots/output-3.png)  |
+| ![task2](task-2/images/task-2.jpg)                               | ![output2](screenshots/output-2.png)  |
+| ![task4](task-4/images/task-4.jpg)                               | ![output3](screenshots/output-3.png)  |
