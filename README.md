@@ -8,8 +8,6 @@ Assignments from betasquirrel
 
 **Lorem ipsum dolor sit amet consectetur** adipisicing elit. Blanditiis molestiae nisi et repellat ex eligendi maxime ipsa aut! Fugit quasi sunt inventore perspiciatis? Cumque qui nulla, voluptate quam deleniti est orem ipsum dolor sit amet *consectetur adipisicing elit.* Blanditiis molestiae nisi et repellat ex eligendi maxime ipsa aut! Fugit quasi sunt inventore perspiciatis? Cumque qui nulla, ~~voluptate quam deleniti est~~
 
-`git push`
-
 ## Linux Commands
 
 - `cd` - Change current directory. Ex: `cd Desktop`, `cd ..`
@@ -30,7 +28,10 @@ Assignments from betasquirrel
 
 Read the below pages and attend the tests
 
-- [HTML](https://www.w3schools.com/html/default.asp)
+- [HTML Home](https://www.w3schools.com/html/default.asp)
+- [HTML Introduction](https://www.w3schools.com/html/html_intro.asp)
+- [HTML Editors](https://www.w3schools.com/html/html_editors.asp)
+- [HTML Basics](https://www.w3schools.com/html/html_basic.asp)
 - [Elements](https://www.w3schools.com/html/html_elements.asp)
 - [Attribute](https://www.w3schools.com/html/html_attributes.asp)
 - [Headings](https://www.w3schools.com/html/html_headings.asp)
@@ -55,3 +56,4 @@ Read the below pages and attend the tests
 | ----------------------------------------------------------|---------------------------------------|
 | ![task1](images/task-1.jpg)                               | ![output1](screenshots/output-1.png)  |
 | ![task2](images/task-2.jpg)                               | ![output2](screenshots/output-2.png)  |
+| ![task4](images/task-4.jpg)                               | ![output3](screenshots/output-3.png)  |
