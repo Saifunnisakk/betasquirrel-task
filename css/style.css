@@ -31,6 +31,6 @@ body {
   align-items: center;
   display: flex;
 }
-h3 {
-  text-decoration: underline;
+#bottom a {
+  color: black;
 }
