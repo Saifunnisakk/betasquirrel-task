@@ -1,28 +1,31 @@
 # betasquirrel-task
 
 Assignments from betasquirrel
- 
- ## first task
+
+Demo
+
+[website link](https://saifunnisakk.github.io/betasquirrel-task/)
+
+## first task
 
 ### formatting
 
-**Lorem ipsum dolor sit amet consectetur** adipisicing elit. Blanditiis molestiae nisi et repellat ex eligendi maxime ipsa aut! Fugit quasi sunt inventore perspiciatis? Cumque qui nulla, voluptate quam deleniti est orem ipsum dolor sit amet *consectetur adipisicing elit.* Blanditiis molestiae nisi et repellat ex eligendi maxime ipsa aut! Fugit quasi sunt inventore perspiciatis? Cumque qui nulla, ~~voluptate quam deleniti est~~
+**Lorem ipsum dolor sit amet consectetur** adipisicing elit. Blanditiis molestiae nisi et repellat ex eligendi maxime ipsa aut! Fugit quasi sunt inventore perspiciatis? Cumque qui nulla, voluptate quam deleniti est orem ipsum dolor sit amet _consectetur adipisicing elit._ Blanditiis molestiae nisi et repellat ex eligendi maxime ipsa aut! Fugit quasi sunt inventore perspiciatis? Cumque qui nulla, ~~voluptate quam deleniti est~~
 
 ## Linux Commands
 
 - `cd` - Change current directory. Ex: `cd Desktop`, `cd ..`
-- `ls` - LIst contents of directory. Ex:  `ls -a`  lists hidden files as well.
+- `ls` - LIst contents of directory. Ex: `ls -a` lists hidden files as well.
 - `pwd` - Display current working directory path.
 - `cat` - Display contets of file. Ex: `cat README.md`
 
 ## Git Commands
 
 1. `git config` Configure git user. Ex: `git config --global user.name "saifunnisakk"`, `git config --global user.email "saifunnisakk313@gmail.com`
-2. `git clone` Clone a remote git repo to your local. Ex: `git clone  https://github.com/Saifunnisakk/betasquirrel-task.git`,  `git clone https://github.com/Saifunnisakk/betasquirrel-task.git new-folder`
-3. `git add` Add your file changes to git. Ex: `git add .`, `git add README.md`
-4.`git commit` Commit changes to git. EX: `git commit -m "initial commit"`
-5. `git push` Push your local commits to remote repo. Ex: `git push origin main`  
-6. `git pull`  Fetches and downloads contents from the remote repository and integrates changes into the local repository. Ex: `git pull <remote>`
+2. `git clone` Clone a remote git repo to your local. Ex: `git clone  https://github.com/Saifunnisakk/betasquirrel-task.git`, `git clone https://github.com/Saifunnisakk/betasquirrel-task.git new-folder`
+3. `git add` Add your file changes to git. Ex: `git add .`, `git add README.md` 4.`git commit` Commit changes to git. EX: `git commit -m "initial commit"`
+4. `git push` Push your local commits to remote repo. Ex: `git push origin main`
+5. `git pull` Fetches and downloads contents from the remote repository and integrates changes into the local repository. Ex: `git pull <remote>`
 
 ## Task 3
 
@@ -51,9 +54,8 @@ Read the below pages and attend the tests
 
 ## Tasks
 
-
-| Requirement                                               | Output                                |
-| ----------------------------------------------------------|---------------------------------------|
-| ![task1](task-1/images/task-1.jpg )                               | ![output1](screenshots/output-1.png)  |
-| ![task2](task-2/images/task-2.jpg)                               | ![output2](screenshots/output-2.png)  |
-| ![task4](task-4/images/task-4.jpg)                               | ![output3](screenshots/output-3.png)  |
+| Requirement                        | Output                               |
+| ---------------------------------- | ------------------------------------ |
+| ![task1](task-1/images/task-1.jpg) | ![output1](screenshots/output-1.png) |
+| ![task2](task-2/images/task-2.jpg) | ![output2](screenshots/output-2.png) |
+| ![task4](task-4/images/task-4.jpg) | ![output3](screenshots/output-3.png) |
