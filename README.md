@@ -2,7 +2,7 @@
 
 Assignments from betasquirrel
 
-Demo
+## Demo
 
 [website link](https://saifunnisakk.github.io/betasquirrel-task/)
 
@@ -51,6 +51,11 @@ Read the below pages and attend the tests
 - [Tables](https://www.w3schools.com/html/html_tables.asp)
 - [Classes](https://www.w3schools.com/html/html_classes.asp)
 - [Id](https://www.w3schools.com/html/html_id.asp)
+
+##NOTES
+
+- [HTML] - Hypertext Markup Language
+- [HTTPS] -
 
 ## Tasks
 
