@@ -26,6 +26,8 @@ Assignments from betasquirrel
 3. `git add` Add your file changes to git. Ex: `git add .`, `git add README.md` 4.`git commit` Commit changes to git. EX: `git commit -m "initial commit"`
 4. `git push` Push your local commits to remote repo. Ex: `git push origin main`
 5. `git pull` Fetches and downloads contents from the remote repository and integrates changes into the local repository. Ex: `git pull <remote>`
+   6.'git reset --hard'
+   7.'rm -rf'
 
 ## Task 3
 
@@ -55,7 +57,9 @@ Read the below pages and attend the tests
 ##NOTES
 
 - [HTML] - Hypertext Markup Language
-- [HTTPS] -
+- [CSS] - Cascading Style Sheet
+- [HTTPS] - Hypertext Transfer Protocol Secure
+- [SSH] - Secure Socket shell
 
 ## Tasks
 
