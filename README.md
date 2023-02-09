@@ -26,8 +26,12 @@ Assignments from betasquirrel
 3. `git add` Add your file changes to git. Ex: `git add .`, `git add README.md` 4.`git commit` Commit changes to git. EX: `git commit -m "initial commit"`
 4. `git push` Push your local commits to remote repo. Ex: `git push origin main`
 5. `git pull` Fetches and downloads contents from the remote repository and integrates changes into the local repository. Ex: `git pull <remote>`
-   6.'git reset --hard'
-   7.'rm -rf'
+6. `git reset --hard` Remove any changes and remove from the local directory.
+7. `git reset --soft` This will keep your files,and stage all changes back automatically.
+8. `git reset --mixed` Keeps all files the same but unstages the changes.
+9. `mkdir` To create a new directory using git bash. Ex: `mkdir <folder name>`
+10. `rm` Used to delete a file or a folder from the local machine.
+11. `-rm` recursively and forcefully delete the .git folder.
 
 ## Task 3
 
@@ -54,12 +58,14 @@ Read the below pages and attend the tests
 - [Classes](https://www.w3schools.com/html/html_classes.asp)
 - [Id](https://www.w3schools.com/html/html_id.asp)
 
-##NOTES
+## Notes
 
 - [HTML] - Hypertext Markup Language
 - [CSS] - Cascading Style Sheet
 - [HTTPS] - Hypertext Transfer Protocol Secure
 - [SSH] - Secure Socket shell
+- [VW] - Viewport Width
+- [VH] -Vieport Height
 
 ## Tasks
 
