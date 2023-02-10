@@ -64,11 +64,10 @@ body {
 }
 .blue-bg {
     background-color:#1ABCFD;
+} 
+#circle-container, #tile-container { 
+    display: flex;
 }
-#tile-container,
-#circle-container {
-                 display: flex;
-     }
 #tile-container {
     margin-bottom: 15px;
 }
