@@ -6,11 +6,11 @@ Assignments from betasquirrel
 
 [website link](https://saifunnisakk.github.io/betasquirrel-task/)
 
-## first task
+## Connect Me
 
-### formatting
+[Stackoverflow](https://stackoverflow.com/users/21194370/saifunnisa-kk?tab=profile)
 
-**Lorem ipsum dolor sit amet consectetur** adipisicing elit. Blanditiis molestiae nisi et repellat ex eligendi maxime ipsa aut! Fugit quasi sunt inventore perspiciatis? Cumque qui nulla, voluptate quam deleniti est orem ipsum dolor sit amet _consectetur adipisicing elit._ Blanditiis molestiae nisi et repellat ex eligendi maxime ipsa aut! Fugit quasi sunt inventore perspiciatis? Cumque qui nulla, ~~voluptate quam deleniti est~~
+[Linkedin](https://www.linkedin.com/in/saifunnisa-k-k-655210261)
 
 ## Linux Commands
 
