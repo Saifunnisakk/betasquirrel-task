@@ -118,7 +118,7 @@ body {
     background-color: white;
 }
 .inner-one h2 {
-    color:black;
+    color:white;
 }
 .inner-three {
     width: 90%;
@@ -194,7 +194,7 @@ body {
     padding top: 0;
 }
 #sidebar nav a.active {
-    color: #0ACE82
+    color: #0ACE82;
     text-decoration: none;
 }
 
