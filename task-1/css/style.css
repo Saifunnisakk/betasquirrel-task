@@ -31,6 +31,9 @@ body {
   text-decoration: none;
   padding: 15px;
 }
+#main {
+  overflow: auto;
+}
 #main-container {
   background-color: #d1d8e8;
   height: 250px;
@@ -41,7 +44,7 @@ body {
   text-decoration: underline;
 }
 #sub-container {
-  height: 300px;
+  height: calc(100vh - 200px);
   width: calc(100vw);
   overflow: hidden;
   margin: 0 auto;
@@ -56,4 +59,17 @@ body {
 }
 .m-r {
   margin-right: 15px;
+}
+@media only screen and (max-width: 650px) {
+  .right a {
+    display: none;
+  }
+  .boxes {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  #main-container {
+    padding: 10px;
+  }
 }
