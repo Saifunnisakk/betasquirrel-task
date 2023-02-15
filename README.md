@@ -8,9 +8,11 @@ Assignments from betasquirrel
 
 ## Connect Me
 
-[Stackoverflow](https://stackoverflow.com/users/21194370/saifunnisa-kk?tab=profile)
+- [Github](https://github.com/Saifunnisakk/betasquirrel-task)
 
-[Linkedin](https://www.linkedin.com/in/saifunnisa-k-k-655210261)
+- [Stackoverflow](https://stackoverflow.com/users/21194370/saifunnisa-kk?tab=profile)
+
+- [Linkedin](https://www.linkedin.com/in/saifunnisa-k-k-655210261)
 
 ## Linux Commands
 
@@ -18,29 +20,36 @@ Assignments from betasquirrel
 - `ls` - LIst contents of directory. Ex: `ls -a` lists hidden files as well.
 - `pwd` - Display current working directory path.
 - `cat` - Display contets of file. Ex: `cat README.md`
+- `ssh-keygen` - Generate ssh key. Ex: `ssh-keygen -t ed25519 -c "myemail@gmail.com"`
+- `mkdir` - Create folder. Ex: `mkdir test`
+- `rm` - Remove file or folder. Ex: `rm my-file.txt`,`rm -rf my-folder`
+- `clear` - Clear terminal.
 
 ## Git Commands
 
 1. `git config` Configure git user. Ex: `git config --global user.name "saifunnisakk"`, `git config --global user.email "saifunnisakk313@gmail.com`
 2. `git clone` Clone a remote git repo to your local. Ex: `git clone  https://github.com/Saifunnisakk/betasquirrel-task.git`, `git clone https://github.com/Saifunnisakk/betasquirrel-task.git new-folder`
 3. `git add` Add your file changes to git. Ex: `git add .`, `git add README.md` 4.`git commit` Commit changes to git. EX: `git commit -m "initial commit"`
-4. `git push` Push your local commits to remote repo. Ex: `git push origin main`
-5. `git pull` Fetches and downloads contents from the remote repository and integrates changes into the local repository. Ex: `git pull <remote>`
-6. `git reset --hard` Remove any changes and remove from the local directory.
-7. `git reset --soft` This will keep your files,and stage all changes back automatically.
-8. `git reset --mixed` Keeps all files the same but unstages the changes.
-9. `mkdir` To create a new directory using git bash. Ex: `mkdir <folder name>`
-10. `rm` Used to delete a file or a folder from the local machine.
-11. `-rm` recursively and forcefully delete the .git folder.
+4. `git commit` Commit changes to git. Ex: `git commit -m "Initial commit"`
+5. `git push` Push your local commits to remote repo. Ex: `git push origin main`
+6. `git pull` Fetches and downloads contents from the remote repository and integrates changes into the local repository. Ex: `git pull <remote>
+7. `git config --list` To see the config added.
+8. `git reset --hard` Remove any changes and remove from the local directory.
+9. `git reset --soft` This will keep your files,and stage all changes back automatically.
+10. `git reset --mixed` Keeps all files the same but unstages the changes.
+11. `git status` To see the current changes as list.
+12. `git diff` To see the changes on each file.
+13. `git log` See commit history.
+14. `git stash` Stash your uncommitted changes.
 
-## Task 3
+## Reading Task
 
 Read the below pages and attend the tests
 
 - [HTML Home](https://www.w3schools.com/html/default.asp)
-- [HTML Introduction](https://www.w3schools.com/html/html_intro.asp)
-- [HTML Editors](https://www.w3schools.com/html/html_editors.asp)
-- [HTML Basics](https://www.w3schools.com/html/html_basic.asp)
+- [Intro](https://www.w3schools.com/html/html_intro.asp)
+- [Editors](https://www.w3schools.com/html/html_editors.asp)
+- [Basics](https://www.w3schools.com/html/html_basic.asp)
 - [Elements](https://www.w3schools.com/html/html_elements.asp)
 - [Attribute](https://www.w3schools.com/html/html_attributes.asp)
 - [Headings](https://www.w3schools.com/html/html_headings.asp)
@@ -50,13 +59,33 @@ Read the below pages and attend the tests
 - [Quotations](https://www.w3schools.com/html/html_quotation_elements.asp)
 - [Comments](https://www.w3schools.com/html/html_comments.asp)
 - [Colors](https://www.w3schools.com/html/html_colors.asp)
+- [RGB](https://www.w3schools.com/html/html_colors_rgb.asp)
+- [HEX](https://www.w3schools.com/html/html_colors_hex.asp)
+- [HSL](https://www.w3schools.com/html/html_colors_hsl.asp)
 - [Css](https://www.w3schools.com/html/html_css.asp)
 - [Links](https://www.w3schools.com/html/html_links.asp)
+- [Link Colors](https://www.w3schools.com/html/html_links_colors.asp)
+- [Limk Bookmaks](https://www.w3schools.com/html/html_favicon.asp)
 - [Images](https://www.w3schools.com/html/html_images.asp)
+- [Image Map](https://www.w3schools.com/html/html_images_imagemap.asp)
+- [Background Images](https://www.w3schools.com/html/html_images_background.asp)
+- [Pictures](https://www.w3schools.com/html/html_images_picture.asp)
 - [Favicon](https://www.w3schools.com/html/html_favicon.asp)
 - [Tables](https://www.w3schools.com/html/html_tables.asp)
+- [Table Borders](https://www.w3schools.com/html/html_table_borders.asp)
+- [Table Sizes](https://www.w3schools.com/html/html_table_sizes.asp)
+- [Table Headers](https://www.w3schools.com/html/html_table_headers.asp)
+- [Padding & Spacing](https://www.w3schools.com/html/html_table_padding_spacing.asp)
+- [Colspan & Rowspan](https://www.w3schools.com/html/html_table_colspan_rowspan.asp)
+- [Table Styling](https://www.w3schools.com/html/html_table_styling.asp)
+- [Table Colroup](https://www.w3schools.com/html/html_table_colgroup.asp)
+- [HTML List](https://www.w3schools.com/html/html_lists.asp)
+- [Unordered List](https://www.w3schools.com/html/html_lists_unordered.asp)
+- [Ordered List](https://www.w3schools.com/html/html_lists_ordered.asp)
+- [Other Lists](https://www.w3schools.com/html/html_lists_other.asp)
+- [Block & Inline](https://www.w3schools.com/html/html_blocks.asp)
 - [Classes](https://www.w3schools.com/html/html_classes.asp)
-- [Id](https://www.w3schools.com/html/html_id.asp)
+- [ID](https://www.w3schools.com/html/html_id.asp)
 
 ## Notes
 
@@ -67,7 +96,7 @@ Read the below pages and attend the tests
 - [VW] - Viewport Width
 - [VH] -Vieport Height
 
-## Tasks
+## Design Tasks
 
 | Requirement                        | Output                               |
 | ---------------------------------- | ------------------------------------ |
