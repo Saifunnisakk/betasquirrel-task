@@ -36,7 +36,7 @@ body {
 }
 #main-container {
   background-color: #d1d8e8;
-  height: 250px;
+  height: 280px;
   margin: 15px 0px;
   padding: 10px;
 }
@@ -67,10 +67,6 @@ body {
   .boxes {
     width: 100%;
     margin-bottom: 15px;
-    padding: 10px;
-  }
-  #main-container {
-    padding: 10px;
   }
   #sub-container {
     height: auto;
