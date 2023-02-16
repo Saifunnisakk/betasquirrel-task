@@ -72,4 +72,7 @@ body {
   #main-container {
     padding: 10px;
   }
+  #sub-container {
+    height: auto;
+  }
 }
