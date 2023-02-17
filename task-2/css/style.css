@@ -57,10 +57,12 @@ body {
   border: 2px solid #369b25;
   height: 100%;
 }
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 650px) {
   #menu-container a {
     display: none;
   }
+}
+@media only screen and (max-width: 900px) {
   #main-container {
     width: calc((100%) - 60px);
     flex-direction: column;
