@@ -1,0 +1,134 @@
+body {
+  margin: 0 auto;
+}
+#navbar {
+  height: 80px;
+  border-bottom: 2px solid black;
+}
+.logo-container {
+  float: left;
+  width: 200px;
+  display: flex;
+  justify-content: flex-start;
+}
+.logo-container img {
+  height: 60px;
+  margin: 10px 10px;
+}
+.logo-container h2 {
+  display: inline-block;
+  color: black;
+  margin: 25px 0px 25px;
+}
+.profile-container {
+  width: auto;
+  float: right;
+}
+.profile-container img {
+  height: 60px;
+  border-radius: 50%;
+  margin: 10px 15px;
+}
+.main {
+  height: calc(100vh - 82px);
+}
+#sidebar {
+  height: 100%;
+  width: 150px;
+  float: left;
+  border-right: 2px solid black;
+}
+#sidebar a {
+  text-decoration: none;
+  display: flex;
+  padding: 15px;
+  color: black;
+}
+#container a {
+  color: black;
+  padding: 20px;
+  margin-top: 20px;
+}
+.head-box {
+  height: 60px;
+  margin-left: 152px;
+}
+.name-box {
+  height: 60px;
+  margin-left: 152px;
+}
+
+.left {
+  width: 300px;
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 100px;
+}
+.first {
+  width: 90px;
+  float: left;
+  flex-direction: column;
+  margin-left: 25px;
+}
+input,
+textarea {
+  width: 350px;
+  height: 30px;
+  margin-top: 10px;
+}
+.second {
+  width: 250px;
+  float: right;
+  flex-direction: column;
+  margin-right: 600px;
+}
+.mail-box,
+.select-box {
+  height: 60px;
+  margin-left: 152px;
+  margin-top: 15px;
+}
+select {
+  width: 360px;
+  height: 30px;
+  margin-top: 10px;
+}
+.radio-label {
+  display: inline-block;
+  width: 300px;
+  display: flex;
+}
+.radio-label input {
+  width: 10px;
+}
+.check {
+  display: flex;
+}
+.check-box {
+  float: left;
+  width: calc(100% - 152px);
+}
+.text-area {
+  flex-direction: column;
+}
+.button-box {
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+  padding: 15px;
+}
+.check {
+  display: inline-block;
+  display: flex;
+  width: 400px;
+}
+.check input {
+  width: 10px;
+}
+.check label {
+  padding: 10px;
+  display: flex;
+}
