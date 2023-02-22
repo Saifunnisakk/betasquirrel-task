@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="left-navbar img">
+        <img src="images/logo.png" alt="logo" />
+        <h2>One School</h2>
+      </div>
+      <div class="right-navbar img">
+        <img src="images/person.webp" alt="person" />
+      </div>
+    </nav>
+    <div class="main">
+      <div class="sidebar">
+        <ul>
+          <li><h4>STUDENTS</h4></li>
+          <li><h4>STAFF</h4></li>
+          <li><h4>EXAMS</h4></li>
+        </ul>
+      </div>
+      <div class="right-container">
+        <div class="registration">STUDENT REGISTRATION</div>
+        <div class="form-container">
+          <div class="main-form">
+            <div class="first-formside">
+              <form>
+                <div class="form-1 name">
+                  <label for="firstname"
+                    >First Name <span class="red-text">*</span> :</label
+                  >
+                </div>
+                <div class="form-1 namefield">
+                  <input
+                    type="text"
+                    placeholder="Enter your first name"
+                    id="first name"
+                  />
+                </div>
+                <div class="form-1 mobile">
+                  <label for="mobile number"
+                    >Mobile <span class="red-text">*</span> :</label
+                  >
+                </div>
+                <div class="form-1 mobilefield">
+                  <input
+                    type="tel"
+                    placeholder="Enter your mobile number"
+                    id="mobile number"
+                  />
+                </div>
+                <div class="form-1 branch">
+                  <label for="branch"
+                    >Branch <span class="red-text">*</span> :</label
+                  >
+                </div>
+                <div class="form-1 branchfield">
+                  <select
+                    name="branch"
+                    id="branch"
+                    placeholder="select branch you like"
+                  >
+                    <option value="">Select branch you like</option>
+                    <option value="computer science">Computer science</option>
+                    <option value="civil">Civil</option>
+                    <option value="information technology">
+                      Information Technology
+                    </option>
+                    <option value="mechanical">Mechanical</option>
+                    <option value="electronics">Electronics</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="second-formside">
+              <form>
+                <div class="form-2 lastname">
+                  <label for="lastname"
+                    >Last Name <span class="red-text">*</span> :</label
+                  >
+                </div>
+                <div class="form-2 lastnamefield">
+                  <input
+                    type="text"
+                    placeholder="Enter your last name"
+                    id="lastname"
+                  />
+                </div>
+                <div class="form-2 email">
+                  <label for="email"
+                    >Email <span class="red-text">*</span> :</label
+                  >
+                </div>
+                <div class="emailfield">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    id="email"
+                  />
+                </div>
+                <div class="form-2 radio">
+                  <label for="radio">Do You Need Hostel Facility :</label>
+                </div>
+                <div class="form-2 radiofield">
+                  <input type="radio" id="hostel" name="hostel" value="yes" />
+                  <label for="yes">Yes</label>
+                  <input type="radio" id="hostel" name="hostel" value="no" />
+                  <label for="no">No</label>
+                </div>
+              </form>
+            </div>
+            <div>
+              <form>
+                <div class="sub-container">Choose Additional Subjects :</div>
+                <div class="checkbox">
+                  <div class="check-1">
+                    <input
+                      type="checkbox"
+                      id="cyber"
+                      name="cyber"
+                      value="cyber"
+                    />
+                    <label for="cyber">Cyber Security</label>
+                  </div>
+                  <div class="check-2">
+                    <input
+                      type="checkbox"
+                      id="artificial"
+                      name="artificial"
+                      value="artificial"
+                    />
+                    <label for="artificial">Artificial Intelligence</label>
+                  </div>
+                  <div class="check-3">
+                    <input
+                      type="checkbox"
+                      id="blockchain"
+                      name="blockchain"
+                      value="blockchain"
+                    />
+                    <label for="blockchain">Blockchain</label>
+                  </div>
+                  <div class="check-4">
+                    <input type="checkbox" id="iot" name="iot" value="iot" />
+                    <label for="iot">IoT</label>
+                  </div>
+                  <div class="check-5">
+                    <input
+                      type="checkbox"
+                      id="robotics"
+                      name="robotics"
+                      value="robotics"
+                    />
+                    <label for="robotics">Robotics</label>
+                  </div>
+                </div>
+                <div class="sub-address">
+                  <div class="address">
+                    <label for="permanent address"
+                      >Permanent Address<span class="red-text">*</span> :</label
+                    >
+                  </div>
+                  <div class="addressfield">
+                    <textarea
+                      type="text"
+                      placeholder="Enter your full address"
+                      cols="70"
+                      rows="10"
+                    ></textarea>
+                  </div>
+                </div>
+              </form>
+              <div class="button">
+                <button class="clear" type="button">CLEAR</button>
+                <button class="submit" type="button">SUBMIT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
