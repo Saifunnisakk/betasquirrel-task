@@ -29,68 +29,83 @@ body {
   border-radius: 50%;
   margin: 10px 15px;
 }
-.main {
-  height: calc(100vh - 82px);
+.main-container {
+  display: flex;
 }
 #sidebar {
-  height: 100%;
-  width: 150px;
+  height: 700px;
+  padding: 10px;
+  width: calc(10%);
   float: left;
   border-right: 2px solid black;
 }
-#sidebar a {
-  text-decoration: none;
+ul {
+  padding: 0;
+}
+li {
+  padding-left: 30px;
+  padding-bottom: 0px;
+  color: #55533a;
+}
+.container {
+  width: 100%;
+}
+.second-navbar {
+  width: 100%;
+  height: 50px;
   display: flex;
-  padding: 15px;
-  color: black;
-}
-#container a {
-  color: black;
-  padding: 20px;
-  margin-top: 20px;
-}
-.first {
-  height: 60px;
-  margin-left: 152px;
-}
-.left {
-  width: 800px;
   float: left;
-  display: flex;
-  justify-content: flex-start;
-  padding: 15px;
+  padding: 10px;
+  align-self: center;
 }
-.right {
-  width: auto;
-  float: right;
-  margin-top: 15px;
-  margin-left: 180px;
+.navbar2-left {
+  margin-left: 4%;
+  text-decoration: underline;
+}
+.navbar2-right {
+  align-self: center;
+  padding: 10px;
+  margin-left: 85%;
+  background-color: #3fb98c;
+  color: #ffffff;
+  border: 0;
+  width: 100px;
+  height: 30px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
 table {
-  width: calc(100vw - 220px);
+  width: 100%;
+  margin-left: 5%;
+  border-collapse: collapse;
 }
-th {
-  text-align: left;
-}
-table,
+tr,
 th,
 td {
   border: 1px solid black;
-  border-collapse: collapse;
   padding: 15px;
+  text-align: center;
+  tab-size: 20px;
+  width: 210px;
 }
-table.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-input,
-textarea {
-  background-color: #3aba89;
-  height: 30px;
-  color: white;
-  width: 200px;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  margin-right: 0 auto;
+@media only screen and (max-width: 800px) {
+  #sidebar {
+    display: none;
+    width: 0px;
+  }
+  #container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+  }
+  .main-table {
+    overflow: auto;
+    width: 100%;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 0;
+  }
 }
