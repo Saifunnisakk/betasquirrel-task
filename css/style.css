@@ -12,12 +12,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
 }
 #bottom {
   height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid black;
 }
 .box {
   height: 40px;
@@ -33,4 +35,43 @@ body {
 #bottom a {
   color: black;
   text-decoration: none;
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  #main {
+    margin: 100px 70px;
+  }
+  #top {
+    width: 400px;
+    font-size: small;
+  }
+  .box {
+    height: 30px;
+    width: 50px;
+  }
+  #bottom a {
+    font-size: small;
+  }
+  #bottom {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #main {
+    margin: 100px 50px;
+  }
+  #top {
+    width: 300px;
+    font-size: x-small;
+  }
+  .box {
+    height: 20px;
+    width: 40px;
+    margin-right: 5px;
+  }
+  #bottom a {
+    font-size: x-small;
+  }
+  #bottom {
+    width: 300px;
+  }
 }
