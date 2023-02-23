@@ -103,10 +103,30 @@ td {
   .right-head {
     padding-right: 8px;
   }
-    .main-table {
-      display: flex;
-      overflow: auto;
-      width: 100%;
-    }
+  .main-table {
+    display: flex;
+    overflow: auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  #sidebar {
+    width: 16%;
+    padding: 0px;
+  }
+  #right-container {
+    width: calc(100% - 17%);
+  }
+  li {
+    padding-left: 0px;
+    padding-right: 4px;
+  }
+  .right-head {
+    padding-right: 75px;
+  }
+  .main-table {
+    display: flex;
+    overflow: auto;
+    width: calc(100% - 11%);
   }
 }
