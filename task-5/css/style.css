@@ -40,7 +40,7 @@ ul {
   list-style-type: none;
 }
 li {
-  padding: 10px 0px;
+  padding: 3px 0px;
 }
 .student {
   text-decoration: underline;
@@ -59,9 +59,9 @@ li {
 .right-head {
   display: flex;
   justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 30px;
   align-items: center;
-  padding-top: 35px;
+  padding-top: 25px;
 }
 a {
   text-decoration: none;
