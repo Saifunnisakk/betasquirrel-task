@@ -1,5 +1,6 @@
 body {
   margin: 0 auto;
+  width: 100%;
 }
 #navbar {
   height: 80px;
@@ -29,83 +30,83 @@ body {
   border-radius: 50%;
   margin: 10px 15px;
 }
-.main-container {
+#main-container {
   display: flex;
-}
-#sidebar {
-  height: 700px;
-  padding: 10px;
-  width: calc(10%);
-  float: left;
-  border-right: 2px solid black;
+  height: 100vh;
+  width: 100%;
 }
 ul {
-  padding: 0;
+  padding-left: 8px;
+  list-style-type: none;
 }
 li {
-  padding-left: 30px;
-  padding-bottom: 0px;
-  color: #55533a;
+  padding: 10px 0px;
 }
-.container {
-  width: 100%;
-}
-.second-navbar {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  float: left;
-  padding: 10px;
-  align-self: center;
-}
-.navbar2-left {
-  margin-left: 4%;
+.student {
   text-decoration: underline;
 }
-.navbar2-right {
-  align-self: center;
+#sidebar {
+  border-right: 2px solid #555;
   padding: 10px;
-  margin-left: 85%;
-  background-color: #3fb98c;
-  color: #ffffff;
-  border: 0;
-  width: 100px;
-  height: 30px;
+  display: flex;
+  height: 100vh;
+  width: 9%;
 }
-
+#right-container {
+  height: 100vh;
+  width: calc((100%) - 10%);
+}
+.right-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  align-items: center;
+  padding-top: 35px;
+}
 a {
-  color: #ffffff;
   text-decoration: none;
+  padding: 5px;
+  color: #fff;
+  background-color: #3ab888;
+}
+h4,
+th {
+  color: #565656;
+}
+span {
+  text-decoration: underline;
+}
+th,
+td,
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
 }
 table {
   width: 100%;
-  margin-left: 5%;
-  border-collapse: collapse;
 }
-tr,
 th,
 td {
-  border: 1px solid black;
-  padding: 15px;
-  text-align: center;
-  tab-size: 20px;
-  width: 210px;
+  padding: 20px;
+  text-align: start;
 }
-@media only screen and (max-width: 650px) {
+.main-table {
+  padding: 0px 25px;
+}
+@media only screen and (max-width: 767px) {
   #sidebar {
     display: none;
-    width: 0px;
   }
-  #container {
+  #right-container {
     width: 100%;
-    height: 80vh;
-    display: flex;
   }
-  .main-table {
-    overflow: auto;
-    width: 100%;
-    justify-content: center;
-    margin-top: 60px;
-    margin-left: 0;
+  .right-head {
+    padding-right: 8px;
+  }
+    .main-table {
+      display: flex;
+      overflow: auto;
+      width: 100%;
+    }
   }
 }
