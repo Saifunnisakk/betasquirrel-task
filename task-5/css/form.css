@@ -166,7 +166,7 @@ textarea {
   display: flex;
   justify-content: safe;
 }
-.clear,
+.reset,
 .submit {
   color: white;
   width: 9vw;
@@ -176,7 +176,7 @@ textarea {
   border-radius: 20px;
   cursor: pointer;
 }
-.clear {
+.reset {
   background-color: #ff7261;
 }
 .submit {
@@ -200,7 +200,7 @@ input[type="email"]:focus {
     float: left;
     margin-left: 15%;
   }
-  .clear,
+  .reset,
   .submit {
     width: auto;
   }
