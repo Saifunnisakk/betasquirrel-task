@@ -129,13 +129,14 @@ select {
 .checkbox {
   float: left;
   margin-bottom: 20px;
-  margin-left: 25px;
+  margin-left: 5px;
   padding-left: 0px;
   padding-top: 8px;
   width: 100%;
   font-size: medium;
   display: flex;
 }
+.check-1,
 .check-2,
 .check-3,
 .check-4,
@@ -215,9 +216,6 @@ input[type="email"]:focus {
     flex-direction: column;
     float: left;
   }
-  .check-1 {
-    margin-left: 3%;
-  }
   .radioarea {
     flex-direction: column;
     margin-left: 4%;
@@ -277,12 +275,9 @@ input[type="email"]:focus {
   input[type="text"],
   input[type="tel"],
   input[type="email"] {
-    width: 80vw;
+    width: 85vw;
 }
 select {
-  width: 81vw;
-}
-.check-1 {
-  margin-left: 3.3%;
+  width: 86vw;
 }
 }
