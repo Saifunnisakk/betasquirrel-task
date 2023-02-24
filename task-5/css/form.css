@@ -212,13 +212,13 @@ input[type="email"]:focus {
   }
   .checkbox {
     display: flex;
-    margin-left: 2%;
+    margin-left: 2.5%;
     flex-direction: column;
     float: left;
   }
   .radioarea {
     flex-direction: column;
-    margin-left: 4%;
+    margin-left: 4.5%;
   }
   .main {
     width: 100vw;
