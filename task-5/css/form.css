@@ -196,6 +196,10 @@ input[type="email"]:focus {
     padding-right: 10px;
     height: 120vh;
   }
+  .sub-container{
+    font-size: small;
+    margin-left: 4%;
+  }
   .button {
     display: flex;
     float: left;
@@ -209,16 +213,19 @@ input[type="email"]:focus {
     display: flex;
     float: left;
     margin-left: 2%;
+    font-size: small;
   }
   .checkbox {
     display: flex;
     margin-left: 2.5%;
     flex-direction: column;
     float: left;
+    font-size: small;
   }
   .radioarea {
     flex-direction: column;
-    margin-left: 4.5%;
+    margin-left: 8.5%;
+    font-size: small;
   }
   .main {
     width: 100vw;
@@ -242,9 +249,11 @@ input[type="email"]:focus {
     align-self: auto;
     flex-direction: column;
     float: left;
+    font-size: small;
   }
   .addressarea {
     margin-left: 4%;
+    font-size: small;
   }
   input[type="text"],
   input[type="tel"],
@@ -252,22 +261,24 @@ input[type="email"]:focus {
     width: 70vw;
     height: 30px;
     margin-left: 4%;
+    font-size: small;
   }
   select {
     width: 71vw;
     height: 35px;
     margin-left: 4.4%;
+    font-size: small;
   }
   label {
     margin-left: 4%;
+    font-size: small;
   }
   .registration {
     margin-left: 3%;
   }
-  .sub-container {
-    margin-left: 3%;
+  .radio {
+    font-size: small;
   }
-}
 @media only screen and (max-width: 767px) {
   .sidebar {
     display: none;
