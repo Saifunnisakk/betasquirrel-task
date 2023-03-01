@@ -6,6 +6,10 @@ Assignments from betasquirrel
 
 [website link](https://saifunnisakk.github.io/betasquirrel-task/)
 
+[figma design desktop view](https://www.figma.com/proto/I7gv4i01Tww7DrQ5T0vfmm/task6?page-id=19%3A4&node-id=66%3A40&viewport=97%2C1247%2C0.14&scaling=min-zoom&starting-point-node-id=66%3A40)
+
+[figma design mobile view](https://www.figma.com/proto/I7gv4i01Tww7DrQ5T0vfmm/task6?page-id=83%3A2&node-id=83%3A3&viewport=1749%2C603%2C0.75&scaling=scale-down)
+
 ## Connect Me
 
 - [Github](https://github.com/Saifunnisakk/betasquirrel-task)
