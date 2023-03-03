@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <div id="navbar">
       <div class="logo-container">
-        <img src="images/logo.png" alt="logo" />
+        <img src="images/logo.svg" alt="logo" />
         <h2>One School</h2>
       </div>
       <div class="profile-container">
@@ -19,16 +40,23 @@
     </div>
     <div id="main-container">
       <div id="sidebar">
-        <ul>
-          <li><h4>STUDENT</h4></li>
-          <li><h4>STAFF</h4></li>
-          <li><h4>EXAMS</h4></li>
-        </ul>
+        <nav>
+          <a href="#" class="flex">
+            <img src="images/student.png" alt="student" />
+            STUDENT</a
+          >
+          <a href="#" class="flex"
+            ><img src="images/staff.png" alt="staff" />STAFF</a
+          >
+          <a href="#" class="flex"
+            ><img src="images/exam.png" alt="exam" />EXAM</a
+          >
+        </nav>
       </div>
       <div id="right-container">
         <div class="right-head">
-          <span><h4 class="student">STUDENT</h4></span>
-          <a href="form.html">Add Student</a>
+          <h2>STUDENTS</h2>
+          <a href="form.html" class="link-btn">Add Student</a>
         </div>
         <div class="main-table">
           <table>

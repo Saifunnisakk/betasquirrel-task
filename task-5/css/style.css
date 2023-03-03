@@ -35,46 +35,53 @@ body {
   height: 100vh;
   width: 100%;
 }
-ul {
-  padding-left: 8px;
-  list-style-type: none;
-}
-li {
-  padding: 3px 0px;
-}
-.student {
-  text-decoration: underline;
-}
 #sidebar {
   border-right: 2px solid #555;
-  padding: 10px;
+  padding: 15px;
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: 9%;
 }
+#sidebar > nav {
+  display: flex;
+  flex-direction: column;
+}
+nav a {
+  padding-bottom: 15px;
+  color: #555;
+  text-decoration: none;
+}
 #right-container {
-  height: 100vh;
+  height: 100%;
   width: calc((100%) - 10%);
+  overflow: hidden;
 }
 .right-head {
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   align-items: center;
   padding-top: 25px;
+  padding-bottom: 15px;
 }
-a {
-  text-decoration: none;
-  padding: 5px;
+.right-head h2 {
+  color: #555;
+  margin: 0;
+}
+.link-btn {
+  background-color: #42b689;
   color: #fff;
-  background-color: #3ab888;
+  font-weight: bold;
+  text-decoration: none;
+  width: 150px;
+  height: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
-h4,
 th {
   color: #565656;
-}
-span {
-  text-decoration: underline;
 }
 th,
 td,
@@ -92,6 +99,14 @@ td {
 }
 .main-table {
   padding: 0px 25px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+nav img {
+  height: 25px;
+  margin-right: 15px;
 }
 @media only screen and (max-width: 767px) {
   #sidebar {
