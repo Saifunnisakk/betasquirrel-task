@@ -104,6 +104,12 @@ td {
   display: flex;
   align-items: center;
 }
+
+.right-head i {
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
 nav img,
 nav i {
   height: 25px;
@@ -112,10 +118,6 @@ nav i {
 nav i {
   vertical-align: middle;
   line-height: 27px !important;
-}
-.right-head i {
-  margin-right: 15px;
-  vertical-align: middle;
 }
 @media only screen and (max-width: 767px) {
   #sidebar {

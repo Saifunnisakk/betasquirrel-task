@@ -184,18 +184,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px 30px 30px 30px;
+    padding: 15px 30px 30px 15px;
 }
 #sidebar nav a {
     color: white;
     padding: 5px;
 }
 #sidebar nav a:first-child {
-    padding top: 0;
+    padding top: 0px;
 }
 #sidebar nav a.active {
     color: #0ACE82;
     text-decoration: none;
+}
+#sidebar nav i {
+    vertical-align: middle;
+  line-height: 27px !important;
+  margin-right: 10px;
 }
 
 
