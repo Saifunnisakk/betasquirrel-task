@@ -1,58 +1,76 @@
-const display = document.querySelector('.display');
-const buttons = document.querySelectorAll('.btn');
-let firstOperand = '';
-let operator = '';
-let secondOperand = '';
-let result = '';
+const display = document.querySelector(".display");
+const operators = document.querySelectorAll(".operator");
+const numbers = document.querySelectorAll(".number");
+const equals = document.querySelector(".equals");
+const clear = document.querySelector(".clear");
 
-function updateDisplay(value) {
-  display.textContent = value;
+let firstOperand = "";
+let secondOperand = "";
+let currentOperator = null;
+let shouldResetScreen = false;
+
+function inputNumber(number) {
+  if (shouldResetScreen) {
+    clearScreen();
+  }
+  display.textContent += number;
 }
 
-function clear() {
-  firstOperand = '';
-  operator = '';
-  secondOperand = '';
-  result = '';
-  updateDisplay('');
+function inputOperator(operator) {
+  if (currentOperator !== null) {
+    calculate();
+  }
+  firstOperand = display.textContent;
+  currentOperator = operator;
+  display.textContent += operator;
+}
+
+function clearScreen() {
+  display.textContent = "";
+  firstOperand = "";
+  secondOperand = "";
+  currentOperator = null;
 }
 
 function calculate() {
-  let num1 = parseFloat(firstOperand);
-  let num2 = parseFloat(secondOperand);
-  if (operator === '+') {
-    result = num1 + num2;
-  } else if (operator === '-') {
-    result = num1 - num2;
-  } else if (operator === '*') {
-    result = num1 * num2;
-  } else if (operator === '/') {
-    result = num1 / num2;
+  if (currentOperator === null || shouldResetScreen) {
+    return;
   }
-  updateDisplay(result);
-  firstOperand = result;
-  operator = '';
-  secondOperand = '';
+  if (currentOperator === "/" && display.textContent === "0") {
+    alert("Cannot divide by zero!");
+    clearScreen();
+    return;
+  }
+  secondOperand = display.textContent.slice(firstOperand.length + 1);
+  display.textContent = operate(
+    currentOperator,
+    parseFloat(firstOperand),
+    parseFloat(secondOperand)
+  );
+  currentOperator = null;
 }
 
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    const value = button.getAttribute('value');
-    if (value === 'C') {
-      clear();
-    } else if (value === '+' || value === '-' || value === '*' || value === '/') {
-      operator = value;
-      updateDisplay('');
-    } else if (value === '=') {
-      calculate();
-    } else {
-      if (!operator) {
-        firstOperand += value;
-        updateDisplay(firstOperand);
-      } else {
-        secondOperand += value;
-        updateDisplay(secondOperand);
-      }
-    }
-  });
+function operate(operator, a, b) {
+  switch (operator) {
+    case "+":
+      return a + b;
+    case "-":
+      return a - b;
+    case "*":
+      return a * b;
+    case "/":
+      return a / b;
+  }
+}
+
+numbers.forEach((button) => {
+  button.addEventListener("click", () => inputNumber(button.value));
 });
+
+operators.forEach((button) => {
+  button.addEventListener("click", () => inputOperator(button.value));
+});
+
+equals.addEventListener("click", calculate);
+
+clear.addEventListener("click", clearScreen);
