@@ -1,3 +1,4 @@
+/* Base styles for desktop view */
 body {
   background-color: gray;
 }
@@ -34,42 +35,42 @@ body {
   color: black;
   text-decoration: none;
 }
-@media only screen and (max-width: 991px) and (min-width: 768px) {
+
+/* Media query for tablet view */
+@media only screen and (max-width: 768px) {
   #main {
-    margin: 100px 70px;
+    width: 90%;
+    margin: 100px auto;
   }
   #top {
-    width: 400px;
-    font-size: small;
-  }
-  .box {
-    height: 30px;
-    width: 50px;
-  }
-  #bottom a {
-    font-size: small;
+    height: 20%;
   }
   #bottom {
-    width: 400px;
+    height: 80%;
+    flex-wrap: wrap;
+  }
+  .box {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
   }
 }
-@media only screen and (max-width: 767px) {
+
+/* Media query for mobile view */
+@media only screen and (max-width: 480px) {
   #main {
-    margin: 100px 50px;
+    width: 90%;
+    margin: 50px auto;
   }
   #top {
-    width: 300px;
-    font-size: x-small;
-  }
-  .box {
-    height: 20px;
-    width: 40px;
-    margin-right: 5px;
-  }
-  #bottom a {
-    font-size: x-small;
+    height: 10%;
   }
   #bottom {
-    width: 300px;
+    height: 90%;
+  }
+  .box {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
   }
 }
