@@ -119,3 +119,42 @@ Read the below pages and attend the tests
 | ![task1](task-1/images/task-1.jpg) | ![output1](screenshots/output-1.png) |
 | ![task2](task-2/images/task-2.jpg) | ![output2](screenshots/output-2.png) |
 | ![task4](task-4/images/task-4.jpg) | ![output3](screenshots/output-3.png) |
+
+## Favicon Links
+
+1. [To Extract favicon from logo image](https://realfavicongenerator.net/)
+
+2. [To create a favicon](https://favicon.io/)
+
+- [To get free icons](https://dryicons.com/)
+
+- [To search for an icon](https://www.iconfinder.com/)
+
+## Fontawesom
+
+- [Link](https://fontawesome.com/search?m=free&o=r)
+
+## Input Types
+
+1. text
+2. email
+3. tel
+4. radio
+5. checkbox
+6. submit
+7. reset
+8. color
+9. url
+10. date
+11. time
+12. week
+13. month
+14. datatime-local
+15. button
+16. password
+17. hidden
+18. file
+19. number min max step
+20. range
+21. search
+22. image
