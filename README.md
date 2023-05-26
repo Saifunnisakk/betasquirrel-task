@@ -99,6 +99,7 @@ Read the below pages and attend the tests
 - [SSH] - Secure Socket shell
 - [VW] - Viewport Width
 - [VH] -Vieport Height
+- [CMS] -Content Management system
 
 ## Responsive Design Diamensions
 

@@ -1,43 +1,26 @@
- <!DOCTYPE html>
-<html>
-
-<head>
-	<title>Form using bootstrap</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-</head>
+<?php
+require('head.php');
+?>
 
 <body>
-	 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-  <div class="container-fluid justify-content-between">
-    <a class="navbar-brand font-weight-bold"href="index.php">
-      <img src="images/logo.svg" alt="Logo" width="60" height="70" class="d-inline-block align-text-center" />
-      ONE SCHOOL
-    </a>
-    <a class="navbar-brand" href="#">
-      <img class="rounded-circle" src="images/person.webp" alt="profile" width="60" height="60" />
-    </a>
-  </div>
-</nav>
-
-<div class="container-fluid">
+<?php 
+  require('navbar.php');
+  ?>
+	
+	<div class="container-fluid">
   <div class="container_height row">
-    <div class="sidebar_border col-2 border-end bg-light">
-      <ul class="list-unstyled">
-        <li class="my-4 mx-5 font-weight-bold">STUDENTS</li>
-        <li class="my-4 mx-5 font-weight-bold">STAFF</li>
-        <li class="my-4 mx-5 font-weight-bold">EXAMS</li>
-      </ul>
-</div>
-
+  <?php
+    require('sidebar.php');
+    ?>
 			<div class="col-10">
 				<div class="row-12 my-3 font-weight-bold">STUDENT REGISTRATION</div>
 				<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="needs-validation row g-3" method="post" novalidate>
 					
 					<div class="col-sm-12 col-md-6">
 						<label for="first-name" class="form-label">First Name <span class="text-danger">*</span></label>
-						<input required class="form-control <?php if (!empty($nameErr)) {
+						<input required class="form-control  <?php if (!empty($nameErr)) {
 																echo 'is-invalid';
-															} ?>" placeholder="Enter student's frist name" id="first-name" type="text" name="first_name" />
+															} ?>" placeholder="Enter your first name" id="first-name" type="text" name="first_name" />
 						<div class="invalid-feedback"><?php if (!empty($nameErr)) {
 															echo $nameErr;
 														} else {
@@ -62,9 +45,9 @@
 					</div>
 					<div class="col-sm-12 col-md-6">
 						<label for="mobile" class="form-label ">Mobile <span class="text-danger">*</span></label>
-						<input required type="tel" class="form-control <?php if (!empty($mobileErr)) {
+						<input required pattern="[6-9]{1}[0-9]{9}" type="tel" class="form-control <?php if (!empty($mobileErr)) {
 																			echo 'is-invalid';
-																		} ?>" name="mobile" id="mobile" placeholder="Enter Parents's Mobile Number" />
+																		} ?>" name="mobile" id="mobile" placeholder="[6-9]000000000" />
 						<div class="invalid-feedback"><?php
 														if (!empty($mobileErr)) {
 															echo $mobileErr;
@@ -114,24 +97,15 @@
 					</div>
 					
 					<div class="col-sm-12 col-md-6">
-						<label for="hostel" class="form-label d-block">Do you need hostel facility <span class="text-danger">*<span></label>
+						<label for="hostel" class="form-label d-block">Do you need hostel facility </label>
 						<div class="form-check form-check-inline fix">
-							<input type="radio" class="form-check-input" id="yes" name="hostel" value="yes" required>
+							<input type="radio" class="form-check-input" id="yes" name="hostel" value="yes" >
 							<label for="yes" class="form-check-label">Yes</label>
 						</div>
 						<div class="form-check form-check-inline fix">
-							<input type="radio" class="form-check-input <?php if (!empty($hostelErr)) {
-																			echo 'is-invalid';
-																		} ?>" id="no" name="hostel" value="no" required>
-							<label for="no" class="form-check-label">NO</label>
-							<div class="invalid-feedback  absolute"><?php if (!empty($hostelErr)) {
-																		echo $hostelErr;
-																	} else {
-																		echo 'please select hostel facility';
-																	}
-																	?></div>
+							<input type="radio" class="form-check-input" id="No" name="hostel" value="No" checked>
+							<label for="No" class="form-check-label">No</label>
 						</div>
-
 					</div>
 					
 					<div class="col-sm-12 col-md-6">
@@ -208,56 +182,63 @@
 		})()
 	</script>
     <?php
-	// define variables and set to empty values
+	// define variables 
 	$nameErr = $emailErr = $last_nameErr = $mobileErr = $branchErr = $hostelErr = "";
 	$first_name = $email = $last_name = $mobile = $branch = $hostel = $subjects = $subject = "";
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
 		// validate name
 		if (empty($_POST["first_name"])) {
 			$nameErr = "Name is mandatory";
 		} else {
 			$first_name = test_input($_POST["first_name"]);
-			// check if name only contains letters and whitespace
+			// check name contains letters and whitespace
 			if (!preg_match("/^[a-zA-Z ]*$/", $first_name)) {
 				$nameErr = "Only letters and white space allowed";
 			}
 		}
+
 		// validate last name
 		if (empty($_POST["last_name"])) {
 			$last_nameErr = "last name is mandatory";
 		} else {
 			$last_name = test_input($_POST["last_name"]);
 		}
+
 		// validate email
 		if (empty($_POST["email"])) {
 			$emailErr = "Email is mandatory";
 		} else {
 			$email = test_input($_POST["email"]);
-			// check if email is well-formed
+			// check is email in correct form
 			if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 				$emailErr = "Invalid email format";
 			}
 		}
-		// validate mobile
+
+		// validate mobile number
 		if (empty($_POST["mobile"])) {
 			$mobileErr = "mobile is mandatory";
 		} else {
 			$mobile = test_input($_POST["mobile"]);
 		}
+
 		// validate branch
 		if (empty($_POST["branch"])) {
 			$branchErr = "branch is mandatory";
 		} else {
 			$branch = test_input($_POST["branch"]);
 		}
-		// validate hostel
+
+		// validate hostel facility
 		if (empty($_POST["hostel"])) {
 			$hostelErr = "hostel is mandatory";
 		} else {
 			$hostel = test_input($_POST["hostel"]);
 		}
-		//subject
+
+		//additional subjects
 		$subjects = $_POST['subjects'];
 		foreach ($subjects as $row) {
 			$subject .= $row . ",";
@@ -270,12 +251,13 @@
 			$address = test_input($_POST["address"]);
 		}
 
-		// if there are no errors, insert data into database
+		// if no errors, insert data into database
 		if (empty($nameErr) && empty($emailErr) && empty($branchErr) && empty($last_nameErr) && empty($hostelErr)) {
 			$servername = "localhost";
 			$username = "root";
 			$password = "";
 			$dbname = "school";
+
 
 			// create connection
 			$conn = new mysqli($servername, $username, $password, $dbname);
@@ -284,15 +266,14 @@
 			if ($conn->connect_error) {
 				die("Connection failed: " . $conn->connect_error);
 			}
-
-			// prepare and bind statement
+     		// prepare and bind statement
 			$stmt = $conn->prepare("INSERT INTO student (first_name, last_name, mobile, email, branch, hostel,subject,address) VALUES (?, ?, ?, ?, ?, ?, ?,?)");
 			$stmt->bind_param("ssssssss", $first_name, $last_name, $mobile, $email, $branch, $hostel, $subject, $address);
 
 			// execute statement
 			if ($stmt->execute() === TRUE) {
-				echo "New record created successfully";
-				header("Location: main.php");
+				// echo "New record created successfully";
+				header("Location: index.php");
 				exit();
 			} else {
 				echo "Error: " . $stmt->error;
